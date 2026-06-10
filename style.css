@@ -357,3 +357,107 @@ footer{
         text-shadow:0 0 5px rgba(213,153,119,.2);
     }
 }
+
+/* TIMELINE GUARÁ */
+
+.timeline-guara{
+
+    position:relative;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:60px;
+
+    margin-top:80px;
+
+    flex-wrap:wrap;
+}
+
+.linha-guara{
+
+    position:absolute;
+
+    top:35px;
+
+    left:10%;
+
+    width:80%;
+
+    height:3px;
+
+    background:linear-gradient(
+        90deg,
+        #845033,
+        #B9764F,
+        #D59977
+    );
+
+    box-shadow:
+        0 0 15px rgba(185,118,79,.6);
+
+    z-index:0;
+}
+
+.etapa{
+
+    position:relative;
+
+    z-index:1;
+
+    text-align:center;
+}
+
+.circulo-guara{
+
+    width:70px;
+
+    height:70px;
+
+    border-radius:50%;
+
+    background:#06070A;
+
+    border:2px solid #B9764F;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:1.5rem;
+
+    font-weight:700;
+
+    color:#D59977;
+
+    margin:auto;
+
+    box-shadow:
+        0 0 15px rgba(185,118,79,.5),
+        0 0 30px rgba(185,118,79,.3);
+
+    transition:.4s;
+}
+
+.circulo-guara:hover{
+
+    transform:scale(1.1);
+
+    box-shadow:
+        0 0 25px rgba(213,153,119,.8),
+        0 0 50px rgba(213,153,119,.4);
+}
+
+.etapa h5{
+
+    margin-top:15px;
+
+    color:white;
+
+    font-weight:600;
+}
