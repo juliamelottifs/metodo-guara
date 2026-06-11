@@ -1,3 +1,4 @@
+console.log("SCRIPT CARREGOU");
 function calcularGuara(){
 
     const respostas =
