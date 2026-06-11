@@ -461,3 +461,35 @@ footer{
 
     font-weight:600;
 }
+
+/* DIAGNÓSTICO */
+
+#resultadoGuara{
+
+    text-align:center;
+
+    padding-top:30px;
+}
+
+#resultadoGuara h2{
+
+    color:#D59977;
+
+    font-size:3rem;
+
+    margin-bottom:10px;
+}
+
+#resultadoGuara h3{
+
+    color:#B9764F;
+
+    margin-bottom:20px;
+}
+
+.guara-check{
+
+    transform:scale(1.3);
+
+    margin-right:10px;
+}
