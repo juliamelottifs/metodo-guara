@@ -1,4 +1,3 @@
-console.log("SCRIPT CARREGOU");
 function calcularGuara(){
 
     const respostas =
@@ -56,3 +55,36 @@ function calcularGuara(){
 
     `;
 }
+const toggle = document.getElementById("theme-toggle");
+
+toggle.addEventListener("click", () => {
+
+    document.body.classList.toggle("light-mode");
+
+    const heroLogo = document.getElementById("hero-logo");
+    const navbarLogo = document.getElementById("navbar-logo");
+
+    if(document.body.classList.contains("light-mode")){
+
+        // TEMA CLARO
+        heroLogo.src = "images/logo3metodo-guara.png";
+
+        if(navbarLogo){
+            navbarLogo.src = "images/logo3metodo-guara.png";
+        }
+
+        toggle.innerHTML = "☀️";
+
+    } else {
+
+        // TEMA ESCURO
+        heroLogo.src = "images/logo1metodo-guara.png";
+
+        if(navbarLogo){
+            navbarLogo.src = "images/logo1metodo-guara.png";
+        }
+
+        toggle.innerHTML = "🌙";
+    }
+
+});
