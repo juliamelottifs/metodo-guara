@@ -88,3 +88,56 @@ toggle.addEventListener("click", () => {
     }
 
 });
+
+const btnPerguntar =
+document.getElementById("btnPerguntar");
+
+if(btnPerguntar){
+
+    btnPerguntar.addEventListener("click", async () => {
+
+        const pergunta =
+        document.getElementById("perguntaGuara").value;
+
+        const respostaDiv =
+        document.getElementById("respostaGuara");
+
+        if(!pergunta){
+            respostaDiv.innerHTML =
+            "Digite uma pergunta.";
+            return;
+        }
+
+        respostaDiv.innerHTML =
+        "🦊 Guará AI está analisando...";
+
+        try{
+
+            const resposta =
+            await fetch("/api/chat",{
+                method:"POST",
+                headers:{
+                    "Content-Type":"application/json"
+                },
+                body:JSON.stringify({
+                    pergunta
+                })
+            });
+
+            const dados =
+            await resposta.json();
+
+            respostaDiv.innerHTML =
+            dados.resposta;
+
+        }catch(error){
+
+            respostaDiv.innerHTML =
+            "Erro ao conectar com a Guará AI.";
+
+            console.error(error);
+        }
+
+    });
+
+}
