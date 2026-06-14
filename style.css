@@ -610,3 +610,50 @@ body.light-mode p{
 body.light-mode span{
     color:#7A4A2D !important;
 }
+
+#perguntaGuara{
+    width:100%;
+    padding:15px;
+    border-radius:15px;
+    border:1px solid #B9764F;
+    background:transparent;
+    color:inherit;
+    resize:none;
+}
+
+.resposta-guara{
+    margin-top:20px;
+    padding:20px;
+    border-radius:15px;
+    border:1px solid #B9764F;
+    min-height:120px;
+    white-space:pre-wrap;
+}
+
+.resposta-guara {
+    width: 80%;
+    max-width: 900px;
+    min-height: 180px;
+
+    margin: 20px auto;
+
+    padding: 20px;
+
+    background: #1f1f1f;
+
+    border: 2px solid #ff9f5a;
+
+    border-radius: 20px;
+
+    color: white;
+
+    text-align: left;
+
+    line-height: 1.7;
+
+    white-space: pre-wrap;
+
+    box-shadow: 0 0 15px rgba(255, 159, 90, 0.2);
+
+    overflow-y: auto;
+}
