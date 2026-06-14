@@ -657,3 +657,23 @@ body.light-mode span{
 
     overflow-y: auto;
 }
+
+body.light-mode .resposta-guara {
+    background: #ffffff;
+    color: #333333;
+    border: 2px solid #B9764F;
+}
+
+body.light-mode #perguntaGuara {
+    background: #ffffff;
+    color: #333333;
+    border: 2px solid #B9764F;
+}
+
+body.light-mode #perguntaGuara::placeholder {
+    color: #777777;
+}
+
+body.light-mode .resposta-guara {
+    box-shadow: 0 0 12px rgba(185, 118, 79, 0.15);
+}
