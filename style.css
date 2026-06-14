@@ -677,3 +677,9 @@ body.light-mode #perguntaGuara::placeholder {
 body.light-mode .resposta-guara {
     box-shadow: 0 0 12px rgba(185, 118, 79, 0.15);
 }
+
+body.light-mode #respostaGuara {
+    background: white !important;
+    color: #333 !important;
+    border: 2px solid #B9764F !important;
+}
