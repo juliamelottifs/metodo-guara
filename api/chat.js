@@ -52,7 +52,9 @@ export default async function handler(req, res) {
     );
 
     const dados = await resposta.json();
-
+    
+    console.log(JSON.stringify(dados, null, 2));
+    
     return res.status(200).json({
       resposta:
       dados.choices[0].message.content
