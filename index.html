@@ -66,7 +66,7 @@
                     <a class="nav-link" href="#guara-ai">Guará AI</a>
                         </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#dashboard">Dashboard</a>
+                        <a class="nav-link" href="#cliente">👤 Área do Cliente</a>
                     </li>
 
                     <li class="nav-item">
@@ -124,8 +124,9 @@
                     Diagnóstico Gratuito
                 </button>
 
-                <button class="btn-guara-outline">
-                    Conhecer Solução
+                <button class="btn-guara"
+                onclick="document.getElementById('cliente').scrollIntoView({behavior:'smooth'})">
+                    👤 Acessar
                 </button>
 
             </div>
@@ -434,28 +435,34 @@
 
 </section>
 
-    <!-- DASHBOARD -->
+    <!-- CLIENTE -->
 
-    <section id="dashboard" class="secao">
+    <section id="cliente" class="secao">
 
         <div class="container">
 
             <h3 data-aos="fade-up">
-                Dashboard Inteligente
+                Área do Cliente
             </h3>
 
             <p data-aos="fade-up">
-                Visualização estratégica dos indicadores da organização.
-            </p>
+        Acesse o portal exclusivo da Método Guará para acompanhar dashboards, indicadores, relatórios e análises estratégicas da sua organização.
+        </p>
 
             <div class="card-guara mt-5"
                  data-aos="zoom-in">
 
-                <h4>Power BI</h4>
+                <h4>🔐 Portal Exclusivo</h4>
 
-                <p>
-                    Área reservada para integração do dashboard.
-                </p>
+        <p>
+        Clientes da Método Guará podem acessar dashboards,
+        indicadores, relatórios e análises estratégicas em um ambiente seguro.
+    </p>
+
+        <button id="btnCliente"
+                class="btn-guara mt-4">
+            👤 Acessar Área do Cliente
+        </button>
 
             </div>
 

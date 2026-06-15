@@ -683,3 +683,22 @@ body.light-mode #respostaGuara {
     color: #333 !important;
     border: 2px solid #B9764F !important;
 }
+
+#cliente .card-guara {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#cliente h4 {
+    margin-bottom: 15px;
+}
+
+#cliente p {
+    margin-bottom: 25px;
+    line-height: 1.7;
+}
+
+#btnCliente {
+    min-width: 250px;
+}
