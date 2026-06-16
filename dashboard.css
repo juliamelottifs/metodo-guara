@@ -1,0 +1,177 @@
+:root{
+    --roxo:#6B119A;
+    --roxo-claro:#8B2BC7;
+    --amarelo:#FFAA00;
+    --branco:#FFFFFF;
+    --cinza:#F4F4F4;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:linear-gradient(
+        135deg,
+        var(--roxo),
+        var(--roxo-claro)
+    );
+    min-height:100vh;
+}
+
+/* LAYOUT */
+
+.dashboard-layout{
+    display:flex;
+    min-height:100vh;
+}
+
+/* MENU LATERAL */
+
+.sidebar{
+    width:280px;
+    background:rgba(0,0,0,.15);
+    backdrop-filter:blur(10px);
+    padding:30px;
+    border-right:1px solid rgba(255,255,255,.15);
+}
+
+.logo-percorreofc{
+    width:180px;
+    margin-bottom:20px;
+}
+
+.sidebar h2{
+    color:white;
+    margin-bottom:15px;
+}
+
+.usuario-logado{
+    color:white;
+    opacity:.8;
+    margin-bottom:30px;
+}
+
+.sidebar nav a{
+    display:block;
+    color:white;
+    text-decoration:none;
+    padding:14px;
+    border-radius:12px;
+    margin-bottom:10px;
+    transition:.3s;
+}
+
+.sidebar nav a:hover{
+    background:rgba(255,255,255,.12);
+    transform:translateX(5px);
+}
+
+/* CONTEÚDO */
+
+.main-dashboard{
+    flex:1;
+    padding:40px;
+}
+
+/* BARRA SUPERIOR */
+
+.topo{
+    background:var(--amarelo);
+    color:var(--roxo);
+    padding:15px;
+    border-radius:12px;
+    text-align:center;
+    font-weight:700;
+    margin-bottom:30px;
+}
+
+/* TÍTULOS */
+
+.main-dashboard h1{
+    color:white;
+    margin-bottom:10px;
+}
+
+.subtitulo{
+    color:white;
+    opacity:.9;
+    margin-bottom:30px;
+}
+
+/* KPIs */
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+
+.card-kpi{
+    background:white;
+    border-radius:25px;
+    padding:25px;
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+}
+
+.card-kpi h4{
+    color:var(--roxo);
+    margin-bottom:10px;
+}
+
+.numero{
+    font-size:36px;
+    font-weight:700;
+    color:var(--amarelo);
+}
+
+/* DASHBOARD */
+
+.dashboard-box{
+    background:white;
+    margin-top:30px;
+    border-radius:25px;
+    padding:30px;
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+}
+
+.dashboard-box h3{
+    color:var(--roxo);
+    margin-bottom:15px;
+}
+
+.dashboard-box p{
+    color:#555;
+}
+
+/* POWER BI */
+
+.powerbi-placeholder{
+    margin-top:25px;
+    min-height:350px;
+    border:3px dashed var(--amarelo);
+    border-radius:20px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:var(--roxo);
+    font-weight:600;
+    background:#fafafa;
+}
+
+/* RESPONSIVO */
+
+@media(max-width:900px){
+
+    .dashboard-layout{
+        flex-direction:column;
+    }
+
+    .sidebar{
+        width:100%;
+    }
+
+}
