@@ -225,3 +225,262 @@ body{
     font-weight:800;
     color:#FFAA00;
 }
+
+.relatorios-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+    margin-top:30px;
+}
+
+.relatorio-card{
+    background:white;
+    border-radius:25px;
+    padding:30px;
+    box-shadow:0 10px 25px rgba(0,0,0,.12);
+}
+
+.relatorio-card h3{
+    color:#6B119A;
+    margin-bottom:15px;
+}
+
+.relatorio-card p{
+    color:#555;
+    margin-bottom:20px;
+    line-height:1.6;
+
+}
+
+.btn-relatoriorh{
+    background: #FFAA00;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 14px 28px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    width: 100%;
+    transition: all .3s ease;
+    margin-top: 15px;
+}
+
+.btn-relatoriorh:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(255,170,0,.4);
+}
+
+.btn-relatorioexecutivo{
+    background: #FFAA00;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 14px 28px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    width: 100%;
+    transition: all .3s ease;
+    margin-top: 15px;
+}
+
+.btn-relatorioexecutivo:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(255,170,0,.4);
+}
+
+.btn-relatoriorguara{
+    background: #FFAA00;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 14px 28px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    width: 100%;
+    transition: all .3s ease;
+    margin-top: 15px;
+}
+
+.btn-relatoriorguara:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(255,170,0,.4);
+}
+
+.btn-planodeacao{
+    background: #FFAA00;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 14px 28px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    width: 100%;
+    transition: all .3s ease;
+    margin-top: 15px;
+}
+
+.btn-planodeacao:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(255,170,0,.4);
+}
+
+.topo-relatorio{
+
+    background:#FFAA00;
+
+    color:#6B119A;
+
+    text-align:center;
+
+    padding:15px;
+
+    font-size:32px;
+
+    font-weight:800;
+
+    letter-spacing:1px;
+
+    margin-bottom:50px;
+
+    border-radius:0;
+
+}
+
+.relatorio-esquerda{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:20px;
+
+}
+
+.logo-relatorio{
+
+    width:70px;
+
+    height:auto;
+
+}
+
+.btn-voltar{
+
+    background:#FFAA00;
+
+    color:white;
+
+    text-decoration:none;
+
+    padding:12px 24px;
+
+    border-radius:50px;
+
+    font-weight:700;
+
+    transition:.3s;
+
+}
+
+.btn-voltar:hover{
+
+    transform:translateY(-2px);
+
+}
+
+.titulo-relatorio{
+
+    color:white;
+
+    font-size:32px;
+
+    font-weight:800;
+
+}
+
+.texto-normal{
+
+    font-weight:400;
+
+}
+
+.texto-destaque{
+
+    font-weight:900;
+
+}
+
+.conteudo-relatorio{
+
+    max-width:1200px;
+
+    margin:0 auto;
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(350px,1fr));
+
+    gap:40px;
+
+    padding:20px;
+
+}
+
+.relatorio-card{
+
+    background:white;
+
+    border-radius:30px;
+
+    padding:35px;
+
+    transition:.3s;
+
+    border:2px solid rgba(255,255,255,.4);
+
+    box-shadow:
+        0 0 15px rgba(255,255,255,.15),
+        0 0 30px rgba(255,255,255,.12),
+        0 10px 30px rgba(0,0,0,.2);
+
+}
+
+.relatorio-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:
+        0 0 20px rgba(255,255,255,.25),
+        0 0 40px rgba(255,255,255,.2),
+        0 20px 40px rgba(0,0,0,.25);
+
+}
+
+.relatorio-card h3{
+
+    color:#6B119A;
+
+    font-size:20px;
+
+    font-weight:800;
+
+    margin-bottom:20px;
+
+}
+
+.relatorio-card p{
+
+    color:#444;
+
+    line-height:1.8;
+
+    font-size:17px;
+
+    margin-bottom:25px;
+
+}
