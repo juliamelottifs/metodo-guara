@@ -702,3 +702,121 @@ body.light-mode #respostaGuara {
 #btnCliente {
     min-width: 250px;
 }
+
+.radar-container{
+
+    max-width: 900px;
+
+    width: 100%;
+
+    margin: 40px auto;
+
+    padding: 0 20px;
+
+    text-align: center;
+
+    overflow: hidden;
+
+}
+
+.radar-container img{
+
+    width: 100%;
+
+    max-width: 100%;
+
+    height: auto;
+
+    display: block;
+
+    margin: 0 auto;
+
+    border-radius: 7px;
+
+    transition: .3s;
+
+}
+
+/* modo escuro */
+
+.radar-black{
+
+    display:block !important;
+}
+
+.radar-white{
+
+    display:none !important; 
+
+}
+
+/* modo claro */
+
+body.light-mode .radar-black{
+
+    display:none !important;
+
+}
+
+body.light-mode .radar-white{
+
+    display:block !important;
+
+}
+
+/* brilho modo escuro */
+
+body:not(.light-mode) .radar-container img{
+
+    box-shadow:
+        0 0 20px rgba(213,153,119,.15),
+        0 0 40px rgba(213,153,119,.08);
+
+}
+
+/* sombra modo claro */
+
+body.light-mode .radar-container img{
+
+    box-shadow:
+        0 10px 30px rgba(0,0,0,.08);
+
+}
+
+.texto-radar{
+
+    max-width:900px;
+
+    margin:30px auto 0 auto;
+
+    line-height:1.8;
+
+}
+
+.contato-links-footer{
+
+    margin-top:20px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:10px;
+
+}
+
+.contato-links-footer a{
+
+    color:#D59977;
+
+    text-decoration:none;
+
+    transition:.3s;
+
+}
+
+.contato-links-footer a:hover{
+
+    color:white;
+
+}
