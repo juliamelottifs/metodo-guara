@@ -7,6 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Área do Cliente | Instituto Percorre</title>
+    
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="/favicon.ico">
 
     <link rel="stylesheet" href="dashboard.css">
 
@@ -26,32 +30,29 @@
                  alt="Instituto Percorre"
                  class="logo-percorreofc.png">
 
-            <h2>Instituto Percorre</h2>
+            <h2></h2>
 
             <div class="usuario-logado">
-                👤 Aba do cliente
+                Aba do cliente
             </div>
 
             <nav>
 
                 <a href="#">
-                    📊 Dashboard Executivo
+                     Dashboard Executivo
                 </a>
 
                 <a href="funcionarios.html">
-                    👥 Funcionários
+                     Funcionários
                 </a>
 
                 <a href="radar-guara.html">
-                    🎯 Radar Guará
+                     Radar Guará
                 </a>
                 
-                <a href="#">
-                📋 Diagnóstico
-            </a>
 
                 <a href="relatorios.html">
-                    📄 Relatórios
+                     Impacto da Solução
                 </a>
 
                 <a href="index.html">
@@ -67,13 +68,8 @@
         <main class="main-dashboard">
 
             <div class="topo">
-                <span class="texto-normal">
-                    IOS AGORA É 
-                </span>
-
-                <span class="texto-destaque">
-                    PERCORRE
-                </span>
+                
+                <img src="https://institutopercorre.org.br/wp-content/uploads/2026/05/ios-agora-e-percorre-1.png" alt="IOS agora é Instituto Percorre" style="height:32px;margin:0 auto;">
                 
             </div>
 
@@ -94,7 +90,7 @@
                     <h4>Total de Colaboradores</h4>
 
                     <div class="numero">
-                        152
+                        432
                     </div>
 
                 </div>
@@ -104,7 +100,7 @@
                     <h4>Turnover</h4>
 
                     <div class="numero">
-                        8%
+                        14,35%
                     </div>
 
                 </div>
@@ -114,7 +110,7 @@
                     <h4>Absenteísmo</h4>
 
                     <div class="numero">
-                        3%
+                        3,2%
                     </div>
 
                 </div>
@@ -124,7 +120,7 @@
                     <h4>Tempo Médio de Empresa</h4>
 
                     <div class="numero">
-                        2,4 anos
+                        14,1 anos
                     </div>
 
                 </div>
@@ -140,16 +136,21 @@
                 </h3>
 
                 <p>
-                    Aqui será incorporado o dashboard do Instituto Percorre.
+                    Relatório Financeiro, Performance & Impacto do Instituto Percorre.
                 </p>
 
-                <!-- Futuro iframe do Power BI -->
+                <div class="carousel">
+    <button class="prev">&#10094;</button>
 
-                <div class="powerbi-placeholder">
+    <div class="slides">
+        <img src="/dash-pessoasofc.png" class="slide active">
+        <img src="/dash-financeiroofc.png" class="slide">
+    </div>
 
-                    Dashboard em desenvolvimento
+    <button class="next">&#10095;</button>
+</div>
 
-                </div>
+               
 
             </div>
 
@@ -157,6 +158,8 @@
 
     </div>
 
+<script src="script.js"></script>
 </body>
+
 
 </html>

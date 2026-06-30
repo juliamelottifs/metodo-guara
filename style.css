@@ -438,7 +438,7 @@ footer{
 
     margin-top:80px;
 
-    flex-wrap:wrap;
+    flex-wrap:nowrap;
 }
 
 .linha-guara{
@@ -536,6 +536,51 @@ body.light-mode .circulo-guara{
     color:white;
 
     font-weight:600;
+}
+
+/* RESPONSIVO TIMELINE */
+
+@media (max-width: 768px){
+
+    .timeline-guara{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 45px;
+        margin-top: 50px;
+        padding-left: 30px;
+    }
+
+    .linha-guara{
+        width: 3px;
+        height: calc(100% - 70px);
+        left: 64px;
+        top: 35px;
+        background: linear-gradient(
+            180deg,
+            #845033,
+            #B9764F,
+            #D59977
+        );
+    }
+
+    .etapa{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        text-align: left;
+        gap: 20px;
+    }
+
+    .etapa h5{
+        margin: 0;
+        font-size: 1.5rem;
+    }
+
+    .circulo-guara{
+        margin: 0;
+        flex-shrink: 0;
+    }
+
 }
 
 /* DIAGNÓSTICO */
@@ -818,5 +863,213 @@ body.light-mode .radar-container img{
 .contato-links-footer a:hover{
 
     color:white;
+
+}
+
+/* ---------- SUBTÍTULO ---------- */
+
+.subtitulo{
+
+    color:#BEBEBE;
+
+    margin-bottom:30px;
+
+    font-size:16px;
+
+    line-height:1.5;
+
+}
+
+/* ---------- CARDS ---------- */
+
+.cliente-card{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    background:#31343A;
+
+    padding:18px 24px;
+
+    border-radius:18px;
+
+    margin-bottom:18px;
+
+    border:1px solid #444;
+
+    transition:.3s;
+
+}
+
+.cliente-card:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 12px 35px rgba(0,0,0,.35);
+
+}
+
+/* ---------- TÍTULOS ---------- */
+
+.cliente-card h3{
+
+    color:white;
+
+    font-size:18px;
+
+    margin:0 0 6px;
+
+}
+
+.cliente-card p{
+
+    color:#BEBEBE;
+
+    font-size:14px;
+
+    line-height:1.4;
+
+    margin:0;
+
+}
+
+/* ---------- CARD PERCORRE ---------- */
+
+.btn-percorre{
+
+    background:#6D3EFF;
+
+    color:white;
+
+    border:none;
+
+    width:140px;
+
+    height:50px;
+
+    border-radius:12px;
+
+    cursor:pointer;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.btn-percorre:hover{
+
+    background:#5933DD;
+
+}
+
+/* ---------- BOTÃO LOBO ---------- */
+
+.btn-lobo{
+
+    background:#E57E25;
+
+    color:white;
+
+    border:none;
+
+    width:140px;
+
+    height:50px;
+
+    border-radius:12px;
+
+    cursor:pointer;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.btn-lobo:hover{
+
+    background:#D56D17;
+
+}
+
+/* ---------- LOGIN LOBO ---------- */
+
+#loginLobo{
+
+    margin-top:30px;
+
+    animation:fade .4s;
+
+}
+
+#loginLobo input{
+
+    margin-bottom:15px;
+
+}
+
+#loginLobo .btn-guara{
+
+    width:100%;
+
+    background:#E57E25;
+
+}
+
+#loginLobo .btn-guara:hover{
+
+    background:#D46F17;
+
+}
+
+/* ---------- ANIMAÇÃO ---------- */
+
+@keyframes fade{
+
+    from{
+
+        opacity:0;
+        transform:translateY(15px);
+
+    }
+
+    to{
+
+        opacity:1;
+        transform:translateY(0);
+
+    }
+
+}
+
+.cliente-info{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:18px;
+
+    flex:1;
+
+}
+
+.cliente-logo{
+
+    width:60px;
+
+    height:60px;
+
+    object-fit:contain;
+
+    border-radius:12px;
+
+    flex-shrink:0;
 
 }

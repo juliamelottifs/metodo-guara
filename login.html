@@ -1,48 +1,420 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Área do Cliente - Método Guará</title>
+<title>Área do Cliente | Método Guará</title>
+
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="shortcut icon" href="/favicon.ico">
+<link rel="apple-touch-icon" href="/favicon.ico">
 
 <link rel="stylesheet" href="style.css">
 
 <style>
+    /* ========= LOGIN PREMIUM ========= */
+    body{
+         margin:0;
 
-.login-container{
     min-height:100vh;
+
     display:flex;
+
     justify-content:center;
+
     align-items:center;
+
     background:#16181D;
+
+    font-family:'Outfit',sans-serif;
+
+    overflow-x:hidden;
+    }
+    
+    .logo-topo{
+
+    position:fixed;
+
+    top:25px;
+
+    left:30px;
+
+    z-index:999;
+
+}
+
+.logo-topo a{
+
+    display:flex;
+
+    align-items:center;
+
+    text-decoration:none;
+
+}
+
+.logo-topo img{
+
+    width:70px;
+
+    transition:.3s;
+
+}
+
+.logo-topo img:hover{
+
+    transform:scale(1.05);
+
 }
 
 .login-card{
-    width:400px;
-    padding:40px;
-    background:#2A2A2A;
-    border-radius:20px;
+
+    width:720px;
+
+    max-width:92%;
+
+    padding:45px;
+
+    background:#24272D;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:24px;
+
+    box-shadow:0 25px 60px rgba(0,0,0,.35);
+
+}
+
+.login-card h1{
+
     text-align:center;
-    border:1px solid #845033;
+
+    color:white;
+
+    font-size:42px;
+
+    margin:0 0 15px;
+
 }
 
-.login-card h2{
-    color:#F3EFE8;
-    margin-bottom:30px;
+.logo-guara{
+
+    width:70px;
+
+    margin-bottom:20px;
+
 }
 
-.login-card input{
-    width:100%;
-    padding:15px;
-    margin-bottom:15px;
-    border-radius:10px;
+.subtitulo{
+
+    text-align:center;
+
+    color:#BFBFBF;
+
+    font-size:17px;
+
+    margin-bottom:40px;
+
+}
+
+/* CARDS */
+
+.cliente-card{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    background:#34373D;
+
+    border:1px solid #444;
+
+    border-radius:18px;
+
+    padding:22px;
+
+    margin-bottom:18px;
+
+    transition:.3s;
+
+}
+
+.cliente-card:hover{
+
+    transform:translateY(-4px);
+
+    border-color:#B9764F;
+
+}
+
+/* INFORMAÇÕES */
+
+.cliente-info{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:18px;
+
+}
+
+.cliente-logo{
+
+    width:64px;
+
+    height:64px;
+
+    object-fit:cover;
+
+    border-radius:12px;
+
+    background:white;
+
+    padding:4px;
+
+}
+
+.cliente-info h3{
+
+    font-size:26px;
+
+    margin-bottom:6px;
+
+}
+
+.cliente-info p{
+
+    color:#BBBBBB;
+
+    font-size:15px;
+
+}
+
+/* BOTÃO PERCORRE */
+
+.btn-percorre{
+
+    width:150px;
+
+    height:52px;
+
     border:none;
+
+    border-radius:14px;
+
+    background:#6D3EFF;
+
+    color:white;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.btn-percorre:hover{
+
+    background:#5D33DF;
+
+}
+
+/* BOTÃO LOBO */
+
+.btn-lobo{
+
+    width:150px;
+
+    height:52px;
+
+    border:none;
+
+    border-radius:14px;
+
+    background:#F18724;
+
+    color:white;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.btn-lobo:hover{
+
+    background:#DD7312;
+
+}
+
+/* LOGIN */
+
+#loginLobo{
+
+    display:none;
+
+    margin-top:35px;
+
+    padding-top:35px;
+
+    border-top:1px solid rgba(255,255,255,.08);
+
+}
+
+#loginLobo input{
+
+    width:100%;
+
+    padding:15px;
+
+    border-radius:12px;
+
+    border:1px solid #4B4E54;
+
+    background:#1D2025;
+
+    color:white;
+
+    margin-bottom:15px;
+
+}
+
+#loginLobo input:focus{
+
+    border-color:#F18724;
+
+    outline:none;
+
+}
+
+#loginLobo .btn-lobo{
+
+    width:100%;
+
 }
 
 .erro{
-    color:red;
+
     margin-top:15px;
+
+    color:#ff7070;
+
+}
+
+/* ===============================
+   RESPONSIVO
+================================ */
+
+@media(max-width:900px){
+
+    .login-card{
+
+        width:95%;
+
+        padding:30px;
+
+    }
+
+    .cliente-card{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+        gap:20px;
+
+    }
+
+    .cliente-info{
+
+        width:100%;
+
+    }
+
+    .btn-percorre,
+    .btn-lobo{
+
+        width:100%;
+
+    }
+
+}
+
+@media(max-width:600px){
+
+    .login-card{
+
+        padding:22px;
+
+        border-radius:18px;
+
+    }
+
+    .login-card h1{
+
+        font-size:32px;
+
+    }
+
+    .subtitulo{
+
+        font-size:15px;
+
+    }
+
+    .cliente-info{
+
+        flex-direction:column;
+
+        text-align:center;
+
+    }
+
+    .cliente-info h3{
+
+        text-align:center;
+
+        font-size:22px;
+
+    }
+
+    .cliente-info p{
+
+        text-align:center;
+
+    }
+
+    .cliente-logo{
+
+        width:70px;
+
+        height:70px;
+
+    }
+
+    .logo-topo{
+
+        left:20px;
+
+        top:20px;
+
+    }
+
+    .logo-topo img{
+
+        width:55px;
+
+    }
+
 }
 
 </style>
@@ -50,32 +422,145 @@
 </head>
 
 <body>
+    <div class="logo-topo">
+
+    <a href="index.html">
+
+        <img src="images/logo1metodo-guara.png" alt="Método Guará">
+
+    </a>
+
+</div>
 
 <div class="login-container">
 
     <div class="login-card">
 
-        <h2>🔐 Área do Cliente</h2>
+        
 
-        <input
-            type="email"
-            id="email"
-            placeholder="E-mail">
+        <h1>Área do Cliente</h1>
 
-        <input
-            type="password"
-            id="senha"
-            placeholder="Senha">
+        <p class="subtitulo">
 
-        <button
-            class="btn-guara"
-            onclick="fazerLogin()">
+            Escolha a organização para acessar o portal.
 
-            Entrar
+        </p>
 
-        </button>
+        <!-- CARD PERCORRE -->
 
-        <div id="erro" class="erro"></div>
+        <div class="cliente-card">
+
+            <div class="cliente-info">
+
+                <img
+                    src="images/logo-percorrecliente.jpg"
+                    class="cliente-logo">
+
+                <div>
+
+                    <h3>Instituto Percorre</h3>
+
+                    <p>
+                        Ambiente preparado para demonstração.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <button
+
+                class="btn-percorre"
+
+                onclick="window.location.href='dashboard-percorre.html'">
+
+                Entrar
+
+            </button>
+
+        </div>
+
+        <!-- CARD LOBO -->
+
+        <div class="cliente-card">
+
+            <div class="cliente-info">
+
+                <img
+
+                    src="images/logo-sadl.jpg"
+
+                    class="cliente-logo">
+
+                <div>
+
+                    <h3>Sou Amigo do Lobo</h3>
+
+                    <p>
+
+                        Login protegido por credenciais.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <button
+
+                class="btn-lobo"
+
+                onclick="abrirLogin()">
+
+                Acessar
+
+            </button>
+
+        </div>
+
+        <!-- LOGIN LOBO -->
+
+        <div id="loginLobo">
+
+            <h3>
+
+                Entrar no Portal
+
+            </h3>
+
+            <input
+
+                type="email"
+
+                id="email"
+
+                placeholder="E-mail">
+
+            <input
+
+                type="password"
+
+                id="senha"
+
+                placeholder="Senha">
+
+            <button
+
+                class="btn-lobo"
+
+                onclick="fazerLogin()">
+
+                Entrar
+
+            </button>
+
+            <p
+                id="erro"
+                class="erro">
+
+            </p>
+
+        </div>
 
     </div>
 
@@ -83,27 +568,47 @@
 
 <script>
 
+function abrirLogin(){
+
+    const login =
+    document.getElementById("loginLobo");
+
+    login.style.display="block";
+
+    login.scrollIntoView({
+
+        behavior:"smooth",
+
+        block:"center"
+
+    });
+
+}
+
 function fazerLogin(){
 
-    const email =
-    document.getElementById("email").value;
+    const email=document.getElementById("email").value;
 
-    const senha =
-    document.getElementById("senha").value;
+    const senha=document.getElementById("senha").value;
 
     if(
-        email === "percorre@metodoguara.online"
+
+        email==="lobo@metodoguara.online"
+
         &&
-        senha === "123456"
+
+        senha==="123456"
+
     ){
 
-        window.location.href =
-        "dashboard-percorre.html";
+        window.location.href="dashboard-lobo.html";
 
-    }else{
+    }
 
-        document.getElementById("erro")
-        .innerHTML =
+    else{
+
+        document.getElementById("erro").innerHTML=
+
         "E-mail ou senha inválidos.";
 
     }
@@ -113,4 +618,5 @@ function fazerLogin(){
 </script>
 
 </body>
+
 </html>
