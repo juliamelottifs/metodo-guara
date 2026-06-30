@@ -83,7 +83,9 @@ if(btnPerguntar){
         btnPerguntar.disabled = true;
         btnPerguntar.innerText = "Processando...";
 
-        
+        // === ATENÇÃO: COLOQUE SUA CHAVE DA API DA GROQ ABAIXO ===
+        const GROQ_API_KEY = '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'; 
+
         try {
             const resposta = await fetch("https://api.groq.com/openai/v1/chat/completions", {
                 method: "POST",
